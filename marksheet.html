@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+     <style>
+        .main{
+            height: 450px;
+            width: 550px;
+            border: solid 2px black;
+        }
+        .table{
+            margin-left: 20px;
+        }
+        .td-1{
+            width: 230px;
+            font-size: 17px;
+            
+        }
+        .b-1{
+            height: 30px;
+            width: 120px;
+            border: solid 1px rgb(104, 101, 101);
+            border-radius: 2px;
+            margin-left: 275px;
+        }
+        .div1{
+            display: flex;
+            justify-content: space-around;
+            font-size: 17px;
+        }
+        
+     </style>
+<body>
+    <div class="main">
+      
+        <h2 style="margin-left: 30px;">
+            Marksheet for Information Technology
+        </h2>
+
+         <center><p>Enter Mark</p></center>
+          
+         <table class="table" cellspacing="10px">
+            <tr>
+                <td class="td-1">1. C Language</td> 
+                <td><input type="text" size="30px" id="one"></td>
+            </tr>
+
+            <tr>
+                <td class="td-1">2. C++ Language</td> 
+                <td><input type="text" size="30px" id="two"></td>
+            </tr>
+
+            <tr>
+                <td class="td-1">3. Database</td> 
+                <td><input type="text" size="30px" id="three"></td>
+            </tr>
+
+            <tr>
+                <td class="td-1">4. HTML</td> 
+                <td><input type="text" size="30px" id="four"></td>
+            </tr>
+
+            <tr>
+                <td class="td-1">5. CSS</td> 
+                <td><input type="text" size="30px" id="five"></td>
+            </tr>
+
+            <tr>
+                <td class="td-1">6. php</td> 
+                <td><input type="text" size="30px" id="six"></td>
+            </tr>
+
+            <tr>
+                <td class="td-1">7. Core java</td> 
+                <td><input type="text" size="30px" id="seven"></td>
+            </tr>
+         </table>
+          
+           <button class="b-1" onclick="main ()">Result</button>
+           
+           <div class="div1">
+           <p> Total is:<span id="tot" style="color:  blue;"></span>/350</p>
+           <p>Percentage is:<span id="per" style="color:  blue;"></span>%</p>
+          </div>
+        
+        
+        
+    </div>
+
+
+    <script>
+        function main () {
+            let a=document.getElementById("one").value;
+            let b=document.getElementById("two").value;
+            let c=document.getElementById("three").value;
+            let d=document.getElementById("four").value;
+            let e=document.getElementById("five").value;
+            let f=document.getElementById("six").value;
+            let g=document.getElementById("seven").value;
+
+            let h=Number(a)+Number(b)+Number(c)+Number(d)+Number(e)+Number(f)+Number(g);
+
+            let i=document.getElementById("tot").innerHTML=h;
+
+            document.getElementById("per").innerHTML=i/350*100;
+
+        }
+    </script>
+
+
+
+
+
+
+
+</body>
+</html>

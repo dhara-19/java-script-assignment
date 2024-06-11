@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    
+    <div style="height: 300px; width: 550px; border: solid 2px black; ">
+         
+        <h2 style="text-align: center;">Maths Operations</h2>
+
+            <div style="display: flex; justify-content: center; gap: 80px; ">
+            <h3 >Enter 1st number:</h3> 
+            <input type="text" style="height: 25px; margin-top: 10px;" size="30px" id="one">
+            
+           </div>
+
+
+           <div style="display: flex; justify-content: center; gap: 80px; ">
+            <h3>Enter 2nd number:</h3> 
+            <input type="text" style="height: 25px; margin-top: 10px; " size="30px" id="two">
+
+            
+           </div>
+
+          
+           <button style="height: 35px; width: 60px; margin-left: 30px; font-size: 20px; font-weight: bold;" onclick="sub ()">+</button>
+            <button style="height: 35px; width: 60px; font-size: 20px; font-weight: bold;" onclick="min ()">-</button>
+            <button style="height: 35px; width: 60px; font-size: 20px; font-weight: bold;" onclick="mul ()">*</button>
+        
+
+            <h3 style="margin-left: 350px; margin-top: -30px;">Answer is: <span id="demo-1" style="color: blue;"></span></h3>
+
+            <button style="height: 35px; width: 60px; margin-left: 30px; font-size: 20px; font-weight: bold;" onclick="div ()">/</button>
+            <button style="height: 35px; width: 60px; font-size: 20px; font-weight: bold;" onclick="per ()">%</button>
+        
+    </div>
+
+
+    <script>
+
+       function sub (){
+        let a=document.getElementById("one").value;
+        let b=document.getElementById("two").value;
+        let c=Number(a)+ Number(b);
+
+        document.getElementById("demo-1").innerHTML=c;
+       }
+
+       function min (){
+        let a=document.getElementById("one").value;
+        let b=document.getElementById("two").value;
+        let c=Number(a)- Number(b);
+
+        document.getElementById("demo-1").innerHTML=c;
+       }
+
+       function mul (){
+        let a=document.getElementById("one").value;
+        let b=document.getElementById("two").value;
+        let c=Number(a)* Number(b);
+
+        document.getElementById("demo-1").innerHTML=c;
+       }
+
+       function div (){
+        let a=document.getElementById("one").value;
+        let b=document.getElementById("two").value;
+        let c=Number(a)/ Number(b);
+
+        document.getElementById("demo-1").innerHTML=c;
+       }
+
+       
+    </script>
+
+
+</body>
+</html>

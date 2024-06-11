@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    Enter Password : <input type="password" id="one"> <br> <br>
+
+    <input type="checkbox" onclick="main()"> Show Password
+
+
+
+
+    <script>
+
+        function main() {
+
+            let a=document.getElementById("one");
+
+            if(a.type === "password") {
+                a.type="text" ;
+            }
+
+            else {
+                a.type="password" ;
+            }
+        }
+    </script>
+</body>
+</html>
